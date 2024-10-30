@@ -1,0 +1,57 @@
+
+<body>
+    <div class="sidebar">
+        <h2>Mon Etab</h2>
+        <hr>
+        <ul>
+            <li >
+                <a href="/"><i class="fas fa-tachometer-alt"></i> Tableau de bord</a>
+            </li>
+            <li>
+                <a href="eleve.html"><i class="fas fa-user-graduate"></i> Élèves</a>
+            </li>
+            <li>
+                <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i> teacher</a>
+            </li>
+            <li>
+                <a href="user.html"><i class="fas fa-chalkboard-teacher"></i> User</a>
+            </li>
+            <li class="active">
+                <a href="/rapport"><i class="fas fa-chart-line"></i> Rapport</a>
+            </li>
+        </ul>
+        <hr style="margin-top:270px;">
+        <ul>
+            <li>
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="back-button" style="justify-content: flex-end;" >
+            <a href="{% url 'rapport:index' %}"><i class="fas fa-arrow-left"></i> Retour</a>
+        </div>
+
+        <div class="form-container">
+            <h1>Rapport</h1>
+
+            <div class="form-group">
+                <select id="classe" name="classe">
+                    <option value="" disabled selected> Sélectionner une option </option>
+                    <option value="liste des élèves">liste des élèves</option>
+                    <option value="liste des professeurs">liste des professeurs</option>
+                    <option value="liste des utilisateurs">liste des utilisateurs</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button class="btn-cancel" onclick="confirmCancel()">Générer format PDF</button>
+                <button class="btn-save" onclick="confirmCancel()"> Générer format Excel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+

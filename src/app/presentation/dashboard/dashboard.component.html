@@ -1,0 +1,47 @@
+<body>
+    <div class="sidebar">
+        <h2>Mon Etab</h2>
+        <hr>
+        <ul>
+            <li >
+                <a href="/"><i class="fas fa-tachometer-alt"></i> Tableau de bord</a>
+            </li>
+            <li>
+                <a href="/eleve"><i class="fas fa-user-graduate"></i> Élèves</a>
+            </li>
+            <li>
+                <a href="/teacher"><i class="fas fa-chalkboard-teacher"></i> teacher</a>
+            </li>
+            <li>
+                <a href="/user"><i class="fas fa-chalkboard-teacher"></i> User</a>
+            </li>
+            <li class="active">
+                <a href="/rapport"><i class="fas fa-chart-line"></i> Rapport</a>
+            </li>
+        </ul>
+        <hr style="margin-top:270px;">
+        <ul>
+            <li>
+                <a href="index.html"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <div class="back-button" style="justify-content: flex-start;" >
+            <h1 style="color:black;">Tableau de bord</h1>
+        </div>
+        <div class="card-container">
+            <div class="card">Nombre d'élèves<br>128 100</div>
+            <div class="card">Nombre de professeurs<br>128 100</div>
+            <div class="card">Nombre d'utilisateurs<br>128 100</div>
+            <div class="card">
+                <h2>Eleve par genre</h2>
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripte.js"></script>
+</body>
+
